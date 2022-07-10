@@ -18,7 +18,8 @@ def main() -> None:
 
     while not shutdown:
         logger.info(f"Tick: {time.time()}")
-        time.sleep(3)
+
+        time.sleep(1)
 
 
 if __name__ == "__main__":

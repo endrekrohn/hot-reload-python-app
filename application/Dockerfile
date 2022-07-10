@@ -49,13 +49,15 @@ ENV PATH="/opt/venv/bin:$PATH"
 
 # Include application scripts
 WORKDIR /application
-COPY ./start.sh start.sh
-RUN chmod +x start.sh
-COPY ./start-reload.sh start-reload.sh
-RUN chmod +x start-reload.sh
+COPY ./start.sh ./start.sh
+RUN chmod +x ./start.sh
+COPY ./start-reload.sh ./start-reload.sh
+RUN chmod +x ./start-reload.sh
+COPY ./start-debug.sh ./start-debug.sh
+RUN chmod +x ./start-debug.sh
 
 # Copy application code
 COPY ./code code
 ENV PYTHONPATH=/application/code
 
-CMD ["/start.sh"]
+CMD ["./start.sh"]
