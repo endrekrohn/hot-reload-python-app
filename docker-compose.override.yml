@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  application:
+    command: /start-reload.sh
+    volumes:
+      - ./application/code:/application/code
+    build:
+      args:
+        INSTALL_DEV: ${INSTALL_DEV-true}
