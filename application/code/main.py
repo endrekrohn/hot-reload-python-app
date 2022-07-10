@@ -17,7 +17,7 @@ def main() -> None:
     signal.signal(signal.SIGTERM, handler)
 
     while not shutdown:
-        logger.info(f"Tick: {time.time()}")
+        logger.info(f"Tick ⏱️: {time.time()}")
 
         time.sleep(1)
 

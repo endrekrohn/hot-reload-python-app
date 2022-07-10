@@ -6,11 +6,20 @@
         {
             "label": "Debug application",
             "type": "shell",
-            "command": "docker-compose -f docker-compose.yml -f docker-compose.override.yml -f docker-compose.debug.yml up --build",
+            "command": "docker compose -f docker-compose.yml -f docker-compose.override.yml -f docker-compose.debug.yml up --build",
             "icon": {
                 "color": "terminal.ansiYellow",
                 "id": "book"
             }
-        }
+        },
+        {
+            "label": "Run application",
+            "type": "shell",
+            "command": "docker compose up --build",
+            "icon": {
+                "color": "terminal.ansiBlue",
+                "id": "run"
+            }
+        },
     ]
 }
