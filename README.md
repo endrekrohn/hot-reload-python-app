@@ -2,7 +2,7 @@
 
 This repo displays how to use the package [`watchfiles`](https://watchfiles.helpmanual.io/) to monitor your code and restart your application inside a `Docker`-container upon changes. Hot-reloading is meant to speed up your workflow ✨
 
-Most application frameworks written in Python already supports `watchfiles`, previously `watchgod`, but this repo tries to show it can be implemented on a custom service.
+Most application frameworks written in Python already supports `watchfiles`, previously `watchgod`, but this repo tries to show how it can be implemented on a custom service.
 
 ## Get started
 
